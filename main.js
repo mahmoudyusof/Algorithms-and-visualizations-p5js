@@ -30,23 +30,23 @@ function setup() {
     wave.amp(1);
 }
 
-// async function keyPressed(){
-//     if(keyCode == 65 || keyCode == 97){
-//         await asyncMergeSort(arr, 0);
-//         console.log(c);
-//         c = 0;
-//     }else if(keyCode == 83 || keyCode == 115){
-//         await syncMergeSort(arr, 0);
-//         console.log(c);
-//         c = 0;
-//     }else if(keyCode == 32){
-//         arr = createRandomArray(l, inc);
-//         for(let i=0; i<l; i++){
-//             state[i] = 0;
-//             console.log(l);
-//         }
-//     }
-// }
+async function keyPressed(){
+    if(keyCode == 65 || keyCode == 97){
+        await asyncMergeSort(arr, 0);
+        console.log(c);
+        c = 0;
+    }else if(keyCode == 83 || keyCode == 115){
+        await syncMergeSort(arr, 0);
+        console.log(c);
+        c = 0;
+    }else if(keyCode == 32){
+        arr = createRandomArray(l, inc);
+        for(let i=0; i<l; i++){
+            state[i] = 0;
+            console.log(l);
+        }
+    }
+}
 
 function draw() {
     background(0);
